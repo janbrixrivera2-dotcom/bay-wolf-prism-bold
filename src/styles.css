@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #f4f0e8;
+  --color-elevated: #fbf8f2;
+  --color-subtle: #ebe4d6;
+  --color-fg: #1c1917;
+  --color-muted: #5c564e;
+  --color-subtle-fg: #7a7368;
+  --color-border: #d8d0c2;
+  --color-accent: #1d4e4a;
+  --color-accent-fg: #f4f0e8;
+  --color-ink: #1c1917;
+  --color-code: #1a1c1b;
+  --color-code-fg: #e8e4db;
+  --color-ok: #2f6b4f;
+  --color-warn: #9a4a1f;
+  --font-display: "Fraunces", "Times New Roman", serif;
+  --font-sans: "Source Sans 3", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+    font-family: var(--font-display);
+  }
+  p {
+    text-wrap: pretty;
+  }
+  :root {
+    --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+    --motion-quick: 150ms;
+    --motion-fast: 250ms;
+  }
+}
+
+@media print {
+  nav,
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white;
+    color: black;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

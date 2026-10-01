@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "C# OOP Exam Reviewer",
+      "hasCanvas": false,
+      "bodyTextLen": 1438,
+      "bodyTextHash": "962468dc4463196fbee497d97a95f3808ca0515d1551eba2ece01b3faf24bcc9",
+      "bodyTextPrefix": "C# OOP Reviewer Study Terms Quiz Glossary Print WRITTEN EXAM REV",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "C# OOP Exam Reviewer",
+      "hasCanvas": false,
+      "bodyTextLen": 1406,
+      "bodyTextHash": "060e9ec1ae89fa9bcdbb9154fe5c1e63bd9f6bb5d99f167b1bc5d4ce4fb7ca01",
+      "bodyTextPrefix": "C# OOP Reviewer WRITTEN EXAM REVIEWER Everything from your C# OO",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
